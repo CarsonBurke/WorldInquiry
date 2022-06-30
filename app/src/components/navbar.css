@@ -11,6 +11,17 @@
     padding: 0 5%;
     user-select: none;
     z-index: 1000;
+    transition: all 0.2s;
+}
+
+.navParent:hover {
+    background: var(--tertiary);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 15px 0;
+}
+
+.navParentTop {
+    background: transparent;
+    box-shadow: none;
 }
 
 .navChild {

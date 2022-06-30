@@ -1,6 +1,7 @@
 import './navbar.css'
 import { navLinks } from '../config'
 import logo from '../images/logo.png'
+import { navManager } from '../navManager'
 
 function generateLinks() {
 
@@ -16,7 +17,7 @@ function generateLinks() {
 
 export function Navbar() {
     return (
-        <nav className="navParent animate floatDown">
+        <nav className="navParent navParentTop animate floatDown" onScroll={navManager}>
             <div className="navChild navLeft">
 
                 <a className="navTopper" href='/'>
