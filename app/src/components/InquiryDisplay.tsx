@@ -4,7 +4,7 @@ import './inquiryDisplay.css'
 export function InquiryDisplay(props: Inquiry) {
 
     return (
-        <div className="inquiryParent animate floatUp">
+        <a href="#" className="inquiryParent animate floatUp">
 
             <img src={props.thumbnailSRC} alt="" className="inquiryThumbnail" />
 
@@ -12,6 +12,6 @@ export function InquiryDisplay(props: Inquiry) {
         
             <p className="text textCenter inquiryText">{props.text}</p>
 
-        </div>
+        </a>
     )
 }

@@ -1,3 +1,7 @@
+.inquiryContainer {
+    align-items: flex-start;
+}
+
 .inquiryParent {
     width: 250px;
     overflow: hidden;

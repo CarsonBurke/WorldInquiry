@@ -52,7 +52,7 @@ export const inquiries = [
     {
         title: 'Title 2',
         thumbnailSRC: stock2,
-        text: 'This is the description of the inquiry'
+        text: 'This is the description of the inquiry, however it is longer than the first version! Perhaps it will go on forever? No.'
     },
     {
         title: 'TITLE 1',
@@ -62,7 +62,7 @@ export const inquiries = [
     {
         title: 'Title 2',
         thumbnailSRC: stock2,
-        text: 'This is the description of the inquiry'
+        text: 'This is the description of the inquiry, however it is longer than the first version! Perhaps it will go on forever? No.'
     },
     {
         title: 'TITLE 1',
@@ -72,7 +72,7 @@ export const inquiries = [
     {
         title: 'Title 2',
         thumbnailSRC: stock2,
-        text: 'This is the description of the inquiry'
+        text: 'This is the description of the inquiry, however it is longer than the first version! Perhaps it will go on forever? No.'
     },
     {
         title: 'TITLE 1',
@@ -82,7 +82,7 @@ export const inquiries = [
     {
         title: 'Title 2',
         thumbnailSRC: stock2,
-        text: 'This is the description of the inquiry'
+        text: 'This is the description of the inquiry, however it is longer than the first version! Perhaps it will go on forever? No.'
     },
     {
         title: 'TITLE 1',
@@ -92,26 +92,6 @@ export const inquiries = [
     {
         title: 'Title 2',
         thumbnailSRC: stock2,
-        text: 'This is the description of the inquiry'
-    },
-    {
-        title: 'TITLE 1',
-        thumbnailSRC: stock1,
-        text: 'This is the description of the inquiry'
-    },
-    {
-        title: 'Title 2',
-        thumbnailSRC: stock2,
-        text: 'This is the description of the inquiry'
-    },
-    {
-        title: 'TITLE 1',
-        thumbnailSRC: stock1,
-        text: 'This is the description of the inquiry'
-    },
-    {
-        title: 'Title 2',
-        thumbnailSRC: stock2,
-        text: 'This is the description of the inquiry'
+        text: 'This is the description of the inquiry, however it is longer than the first version! Perhaps it will go on forever? No.'
     },
 ]

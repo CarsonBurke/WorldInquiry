@@ -53,7 +53,7 @@ export default function App() {
 
           </div>
         </section>
-        <section className='container row flexWrap flexCenter'>
+        <section className='container row flexWrap flexCenter inquiryContainer'>
           {generateInquiries()}
           </section>
       </main>
