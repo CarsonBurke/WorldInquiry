@@ -8,7 +8,7 @@
     background: var(--tertiary);
     box-shadow: rgba(0, 0, 0, 0.4) 0 0 15px 0;
     overflow: hidden;
-    padding: 0 10px;
+    padding: 0 5%;
     user-select: none;
 }
 
@@ -16,11 +16,24 @@
     align-items: center;
     display: flex;
     width: 100%;
+    line-height: 55px;
 }
 
 .navLeft {
     justify-content: left;
     gap: 10px;
+}
+
+.navTopper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    transition: all 0.2s;
+}
+
+.navTopper:hover {
+    opacity: 0.7;
 }
 
 .navIcon {
@@ -29,32 +42,40 @@
     background-position: center;
 }
 
-.navTitle {
-    height: 100%;
-    line-height: 55px;
-    transition: all 0.2s;
-}
-
-.navTitle:hover {
-    opacity: 0.7;
-}
-
 .navRight {
     justify-content: right;
 }
 
-.navRight a {
-    padding: 0 10px;
+.normalNavTopLink {
+    padding: 0 20px;
     transition: all 0.2s;
     height: 100%;
-    line-height: 55px;
+    text-transform: capitalize;
 }
 
-.navRight a:hover {
-    box-shadow: inset rgba(255, 255, 255, 0.2) 0 0 0 1000px;
+.normalNavTopLink:hover {
+    box-shadow: inset rgba(255, 255, 255, 0.1) 0 0 0 1000px;
 }
 
-.navRight a:focus {
+.normalNavTopLink:focus {
     transform: scale(0.9);
-    box-shadow: inset rgba(255, 255, 255, 0.2) 0 0 0 1000px, rgba(0, 0, 0, 0.3) 0 0 8px 0;
+    box-shadow: inset rgba(255, 255, 255, 0.1) 0 0 0 1000px, rgba(0, 0, 0, 0.3) 0 0 8px 0;
+}
+
+.buttonNavTopLink {
+    line-height: initial;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin: 0 8px;
+    transition: all 0.2s;
+    text-transform: capitalize;
+    background: var(--secondary);
+}
+
+.buttonNavTopLink:hover {
+    opacity: 0.7;
+}
+
+.buttonNavTopLink:focus {
+    opacity: 0.7;
 }

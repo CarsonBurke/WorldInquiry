@@ -1,13 +1,14 @@
 import './navbar.css'
 import { navLinks } from '../config'
+import logo from '../images/logo.png'
 
 function generateLinks() {
 
     const links = []
 
-    for (const link of navLinks) {
+    for (const opts of navLinks) {
 
-        links.push(<a href={link}>{link}</a>)
+        links.push(<a href={opts.href || opts.text} className={opts.type + 'NavTopLink'}>{opts.text}</a>)
     }
 
     return links
@@ -18,12 +19,18 @@ export function Navbar() {
         <nav className="navParent">
             <div className="navChild navLeft">
 
-        <img src="../../public/logo.png" alt="" className="navIcon" />
-        <a className="headerMid navTitle" href='/'>WorldInquiry</a>
+                <a className="navTopper" href='/'>
+
+                <img src={logo} alt="" className="navIcon" />
+                <h2 className="headerMid">WorldInquiry</h2>
+
+                </a>
 
             </div>
             <div className="navChild navRight">
+
                 { generateLinks() }
+
             </div>
         </nav>
     )
