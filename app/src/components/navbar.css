@@ -1,0 +1,60 @@
+.navParent {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background: var(--tertiary);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 15px 0;
+    overflow: hidden;
+    padding: 0 10px;
+    user-select: none;
+}
+
+.navChild {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.navLeft {
+    justify-content: left;
+    gap: 10px;
+}
+
+.navIcon {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+}
+
+.navTitle {
+    height: 100%;
+    line-height: 55px;
+    transition: all 0.2s;
+}
+
+.navTitle:hover {
+    opacity: 0.7;
+}
+
+.navRight {
+    justify-content: right;
+}
+
+.navRight a {
+    padding: 0 10px;
+    transition: all 0.2s;
+    height: 100%;
+    line-height: 55px;
+}
+
+.navRight a:hover {
+    box-shadow: inset rgba(255, 255, 255, 0.2) 0 0 0 1000px;
+}
+
+.navRight a:focus {
+    transform: scale(0.9);
+    box-shadow: inset rgba(255, 255, 255, 0.2) 0 0 0 1000px, rgba(0, 0, 0, 0.3) 0 0 8px 0;
+}
