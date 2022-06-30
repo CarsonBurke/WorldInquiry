@@ -6,7 +6,7 @@ export const normalNavLinks = [
 ]
 
 interface NavLink {
-    type: 'normal' | 'button'
+    type: 'normal' | 'button' | 'coloredButton'
     text: string
     href?: string
 }
@@ -29,7 +29,7 @@ export const navLinks: NavLink[] = [
         text: 'login',
     },
     {
-        type: 'button',
+        type: 'coloredButton',
         text: 'signup',
     },
 ]
