@@ -16,7 +16,7 @@ export default function App() {
               <h1 className="headerMassive animate floatUp" data-time='0.7'>WorldInquiry</h1>
             </header>
 
-            <p className="heroText animate floatUp" data-time='0.9'>
+            <p className="heroText textCenter animate floatUp" data-time='0.9'>
               WorldInquiry is a platform for sharing information through articles
             </p>
             
