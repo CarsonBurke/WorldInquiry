@@ -17,6 +17,7 @@
     font-weight: unset;
     text-decoration: unset;
     color: unset;
+    scroll-behavior: smooth;
 }
 
 .material-icons-outlined {}
@@ -24,6 +25,7 @@
 body {
     background-color: var(--primary);
     color: rgb(255, 255, 255);
+    --main: rgb(0, 108, 250);
     --primary: rgb(49, 49, 49);
     --secondary: rgb(59, 59, 59);
     --tertiary: rgb(38, 41, 46);
@@ -35,7 +37,92 @@ a {
     display: block;
 }
 
+.textLeft {
+    text-align: left;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.headerMassive {
+    font-size: 8vw;
+    font-weight: 800;
+}
+
+.headerBig {
+    font-size: 30px;
+    font-weight: 700;
+}
+
 .headerMid {
     font-size: 22px;
     font-weight: 500;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container {
+    padding: 10px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.BGPrimary {
+    background: var(--primary);
+}
+
+.BGSecondary {
+    background: var(--secondary);
+}
+
+.BGTertiary {
+    background: var(--tertiary);
+}
+
+.button {
+    outline: none;
+    transition: all 0.2s;
+    padding: 8px 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 8px 0;
+    position: relative;
+    top: 0;
+    user-select: none;
+    cursor: pointer;
+    background-color: var(--main);
+}
+
+.button:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0 8px 28px 0, inset rgba(0, 0, 0, 0.2) 0 0 0 1000px;
+}
+
+.button:active {
+    top: -4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 16px 28px 0, inset rgba(0, 0, 0, 0.2) 0 0 0 1000px;
+}
+
+.blockParent {
+    margin: 20px 0;
+    padding: 20px 10px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 10px 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blockImage {
+    width: 80%;
+    max-width: 50vw;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 10px 40px 0;
+    user-select: none;
 }

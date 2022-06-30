@@ -16,7 +16,7 @@ function generateLinks() {
 
 export function Navbar() {
     return (
-        <nav className="navParent">
+        <nav className="navParent animate floatDown">
             <div className="navChild navLeft">
 
                 <a className="navTopper" href='/'>
