@@ -3,6 +3,19 @@ import logo from '../images/logo.png'
 import stock1 from '../images/stock1.jpg'
 import './app.css'
 import { Navbar } from '../components/Navbar'
+import { InquiryDisplay } from '../components/InquiryDisplay'
+import { inquiries } from '../config'
+
+function generateInquiries() {
+
+  const inquiryEls = []
+
+  for (const inquiry of inquiries) {
+    inquiryEls.push(<InquiryDisplay title={inquiry.title} thumbnailSRC={inquiry.thumbnailSRC} text={inquiry.text} />)
+  }
+
+  return inquiryEls
+}
 
 export default function App() {
   return (
@@ -16,11 +29,16 @@ export default function App() {
               <h1 className="headerMassive animate floatUp" data-time='0.7'>WorldInquiry</h1>
             </header>
 
-            <p className="heroText textCenter animate floatUp" data-time='0.9'>
-              WorldInquiry is a platform for sharing information through articles
+            <p className="text heroText textCenter animate floatUp" data-time='0.9'>
+              WorldInquiry is a platform for sharing information through articles. To start exploring inquiries, do some action that I haven't yet decided upon. By the way
             </p>
-            
-            <a href="#getStarted" className="button BGSecondary animate floatUp" data-time='0.9'>Get started</a>
+
+            <div className="row seperateContents">
+
+            <a href="#" className="button BGSecondary animate floatUp" data-time='0.9'>Login</a>
+            <a href="#" className="button BGMain animate floatUp" data-time='0.9'>Get started</a>
+
+            </div>
 
         </section>
         <section className='container BGSecondary' id='getStarted'>
@@ -35,6 +53,9 @@ export default function App() {
 
           </div>
         </section>
+        <section className='container row flexWrap flexCenter'>
+          {generateInquiries()}
+          </section>
       </main>
     </div>
   )

@@ -1,0 +1,37 @@
+.inquiryParent {
+    width: 250px;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inquiryParent:hover {
+    background: var(--secondary);
+}
+
+.inquiryParent:active {
+    background: var(--secondary);
+    box-shadow: rgba(0, 0, 0, 0.15) 0 10px 50px 0;
+}
+
+.inquiryHeader {
+    padding: 10px 0;
+}
+
+.inquiryThumbnail {
+    border-radius: 6px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 10px 30px 0;
+}
+
+.inquiryText {
+    max-width: 100% !important;
+}

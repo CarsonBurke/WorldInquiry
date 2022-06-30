@@ -1,3 +1,6 @@
+import stock1 from './images/stock1.jpg'
+import stock2 from './images/stock2.jpg'
+
 export const normalNavLinks = [
     'home',
     'inquiries',
@@ -31,5 +34,84 @@ export const navLinks: NavLink[] = [
     {
         type: 'coloredButton',
         text: 'signup',
+    },
+]
+
+export interface Inquiry {
+    title: string
+    thumbnailSRC: string
+    text: string
+}
+
+export const inquiries = [
+    {
+        title: 'TITLE 1',
+        thumbnailSRC: stock1,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'Title 2',
+        thumbnailSRC: stock2,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'TITLE 1',
+        thumbnailSRC: stock1,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'Title 2',
+        thumbnailSRC: stock2,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'TITLE 1',
+        thumbnailSRC: stock1,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'Title 2',
+        thumbnailSRC: stock2,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'TITLE 1',
+        thumbnailSRC: stock1,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'Title 2',
+        thumbnailSRC: stock2,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'TITLE 1',
+        thumbnailSRC: stock1,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'Title 2',
+        thumbnailSRC: stock2,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'TITLE 1',
+        thumbnailSRC: stock1,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'Title 2',
+        thumbnailSRC: stock2,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'TITLE 1',
+        thumbnailSRC: stock1,
+        text: 'This is the description of the inquiry'
+    },
+    {
+        title: 'Title 2',
+        thumbnailSRC: stock2,
+        text: 'This is the description of the inquiry'
     },
 ]
